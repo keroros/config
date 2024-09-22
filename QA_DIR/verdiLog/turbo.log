@@ -1,0 +1,3 @@
+Command Line: /home/zzzh/EDA/Synopsys/verdi/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f filelist.f
+uname(Linux zzzh-virtual-machine 6.5.0-45-generic #45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 15 16:40:02 UTC 2 x86_64)
+au time 1419.137244 16.270292 11.090740 delta 185487360 185487360 total 556879872 556879872

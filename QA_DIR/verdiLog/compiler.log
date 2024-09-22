@@ -1,0 +1,26 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        -f /home/zzzh/workspace/RISC-V/rtl/std_cell/std_cell.f
+            /home/zzzh/workspace/RISC-V/rtl/std_cell/dff_sync.v
+        -f /home/zzzh/workspace/RISC-V/rtl/cbb/cbb.f
+            /home/zzzh/workspace/RISC-V/rtl/cbb/ram.v
+            /home/zzzh/workspace/RISC-V/rtl/cbb/rom.v
+        /home/zzzh/workspace/RISC-V/rtl/define/defines.v
+        /home/zzzh/workspace/RISC-V/rtl/soc/tiny_riscv_soc.v
+        /home/zzzh/workspace/RISC-V/tb/top_tb.v
+        /home/zzzh/workspace/RISC-V/rtl/core/execute.v
+        /home/zzzh/workspace/RISC-V/rtl/core/instd_execute.v
+        /home/zzzh/workspace/RISC-V/rtl/core/instd.v
+        /home/zzzh/workspace/RISC-V/rtl/core/instf_instd.v
+        /home/zzzh/workspace/RISC-V/rtl/core/instf.v
+        /home/zzzh/workspace/RISC-V/rtl/core/pc.v
+        /home/zzzh/workspace/RISC-V/rtl/core/regs.v
+        /home/zzzh/workspace/RISC-V/rtl/core/tiny_riscv.v
+
+Highest level modules:
+ram
+top_tb
+
+Total	0 error(s),   0 warning(s)

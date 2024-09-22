@@ -1,0 +1,45 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 253952 bytes [need 248K bytes if disable swap]
+
+used block: 10 [memory(10) file(0)]
+                 [ 8K(7) 64K(3) { total 248K bytes } ]
+overhead: (9522) bytes for (10) blocks [Average: (952) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 3(times) 67K(bytes) [9K bytes compressed data from file]
+access => 99888(times) 796M(bytes)
+          [hit ratio: 99.997%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/zzzh/workspace/RISC-V/QA_DIR/verdiLog)
+used swap file number: (4)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (5)
+closeHead: (1)
+closeTail: (4)
+openCnt: (4)
+fid(4): fd(1073741826) fileName(/home/zzzh/workspace/RISC-V/QA_DIR/simv.daidir/kdb.elab++/work.lib++/regs.v.tdc)
+	size(3604) lastModTime(1724052155) curModTime(1724052155)
+	mode(rb)	hot(0) cool(3) pos(0)
+fid(3): fd(1073741825) fileName(/home/zzzh/workspace/RISC-V/QA_DIR/simv.daidir/kdb.elab++/work.lib++/tiny_riscv.v.tdc)
+	size(7400) lastModTime(1724052155) curModTime(1724052155)
+	mode(rb)	hot(4) cool(2) pos(0)
+fid(2): fd(29) fileName(/home/zzzh/workspace/RISC-V/QA_DIR/verdiLog/_swap_0001#1917237334#96392)
+	size(0) lastModTime(0) curModTime(1724052166)
+	mode(w+b)	hot(3) cool(1) pos(0)
+fid(1): fd(1073741824) fileName(/home/zzzh/workspace/RISC-V/QA_DIR/simv.daidir/kdb.elab++/work.lib++/top_tb.v.tdc)
+	size(5344) lastModTime(1724052155) curModTime(1724052155)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(15713e20) pre(14be6ad0) next(0)
+version(200506)
+date(Feb 11 2019 22:10:27)
