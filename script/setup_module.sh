@@ -18,8 +18,6 @@ vim --not-a-term -c 'wq' "$module_name/rtl/${module_name}.v" >/dev/null 2>&1
 mkdir -p "$module_name/tb"
 vim --not-a-term -c 'wq' "$module_name/tb/${module_name}_tb.v" >/dev/null 2>&1
 
-touch "$module_name/README.md"
-
 sed -i "s/module $module_name/module ${module_name}_tb/g" "$module_name/tb/${module_name}_tb.v"
 
 v_file_path=$(realpath "$module_name/rtl/${module_name}.v")
