@@ -2,14 +2,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Create Date: 2024/8/16
 // Author: QiDC
-// Project Name: TinyRISC-V
-// File Name: std_bram.v
+// Project Name: Common Building Block
+// File Name: dual_port_bram.v
 // Versions: v3.2
 // Description: 符合赛灵思FPGA规格的BRAM标准单元 
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-`include "../core/defines.v"
 
 // 简单双口BRAM，只能A端口写B端口读
 module dual_port_bram #(
