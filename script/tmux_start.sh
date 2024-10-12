@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/
+
 tmux new-session -d -s mysession
 
 tmux split-window -v
