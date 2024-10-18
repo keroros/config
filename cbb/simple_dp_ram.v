@@ -10,13 +10,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 // 简单双口BRAM，只能A端口写B端口读
-module dual_port_bram #(
+module simple_dp_ram #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 10
 ) (
-    input  wire                  rst_n,  // 复位
     input  wire                  clka,   // 写时钟
     input  wire                  ena,    // 写使能
+    input  wire                  wea,    // 写使能
     input  wire [ADDR_WIDTH-1:0] addra,  // 写地址
     input  wire [DATA_WIDTH-1:0] dina,   // 写数据
     input  wire                  clkb,   // 读时钟
@@ -29,13 +29,13 @@ module dual_port_bram #(
     reg [DATA_WIDTH-1:0] doutb_r;
 
     always @(posedge clka) begin
-        if (rst_n && ena) begin
+        if (ena && wea) begin
             mem[addra] <= dina;
         end
     end
 
     always @(posedge clkb) begin
-        if (rst_n && enb) begin
+        if (enb) begin
             doutb_r <= mem[addrb];
         end
     end
