@@ -1,15 +1,22 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Create Date: 2024/8/16
-// Author: QiDC
-// Project Name: Common Building Block
-// File Name: dual_port_bram.v
-// Versions: v3.2
-// Description: 符合赛灵思FPGA规格的BRAM标准单元 
+// +FHDR----------------------------------------------------------------------------
+// Project Name  : Common Building Blocks
+// Author        : Qidc
+// Email         : qidc@stu.pku.edu.cn
+// Created On    : 2024/10/21 09:47
+// Last Modified : 2024/10/21 09:49
+// File Name     : simple_dp_ram.v
+// Description   : 简单双端口ram，只能a端口读b端口写，读写可以同时进行
+//         
+// Copyright (c) 2024 Peking University.
+// ALL RIGHTS RESERVED
 // 
-//////////////////////////////////////////////////////////////////////////////////
+// ---------------------------------------------------------------------------------
+// Modification History:
+// Date         By              Version                 Change Description
+// ---------------------------------------------------------------------------------
+// 2024/10/21   Qidc            1.0                     Original
+// -FHDR----------------------------------------------------------------------------
 
-// 简单双口BRAM，只能A端口写B端口读
 module simple_dp_ram #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 10
