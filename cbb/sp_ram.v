@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:14
-// Last Modified : 2024/10/21 09:35
+// Last Modified : 2024/10/23 14:28
 // File Name     : sp_ram.v
 // Description   : 单端口ram，只有一个口读写，且不能同时读写，wea为1时写，
 // wea为0时读
@@ -23,7 +23,7 @@ module sp_ram #(
     parameter ADDR_WIDTH = 10
 ) (
     input  wire                  clka,   // 写时钟
-    input  wire                  ena,    // 写使能
+    input  wire                  ena,    // 端口使能
     input  wire                  wea,    // 写使能
     input  wire [ADDR_WIDTH-1:0] addra,  // 写地址
     input  wire [DATA_WIDTH-1:0] dina,   // 写数据

@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:33
-// Last Modified : 2024/10/21 09:46
+// Last Modified : 2024/10/23 14:29
 // File Name     : true_dp_ram.v
 // Description   : 真双端口ram，两个端口可以同时读或写，但每个端口不能同时进行
 // 读写
@@ -23,12 +23,12 @@ module true_dp_ram #(
     parameter ADDR_WIDTH = 10
 ) (
     input  wire                  clka,   // a口写时钟
-    input  wire                  ena,    // a口写使能
+    input  wire                  ena,    // a端口使能
     input  wire                  wea,    // a口写使能
     input  wire [ADDR_WIDTH-1:0] addra,  // a口写地址
     input  wire [DATA_WIDTH-1:0] dina,   // a口写数据
     input  wire                  clkb,   // b口读时钟
-    input  wire                  enb,    // b口读使能
+    input  wire                  enb,    // b端口使能
     input  wire                  web,    // b口写使能
     input  wire [ADDR_WIDTH-1:0] addrb,  // b口读地址
     input  wire [DATA_WIDTH-1:0] dinb,   // b口写数据
