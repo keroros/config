@@ -16,12 +16,12 @@ mkdir -p "$module_name/rtl"
 vim --not-a-term -c 'wq' "$module_name/rtl/${module_name}.v" >/dev/null 2>&1
 
 mkdir -p "$module_name/tb"
-vim --not-a-term -c 'wq' "$module_name/tb/${module_name}_tb.v" >/dev/null 2>&1
+vim --not-a-term -c 'wq' "$module_name/tb/${module_name}_tb.sv" >/dev/null 2>&1
 
-sed -i "s/module $module_name/module ${module_name}_tb/g" "$module_name/tb/${module_name}_tb.v"
+sed -i "s/module $module_name/module ${module_name}_tb/g" "$module_name/tb/${module_name}_tb.sv"
 
 v_file_path=$(realpath "$module_name/rtl/${module_name}.v")
-tb_file_path=$(realpath "$module_name/tb/${module_name}_tb.v")
+tb_file_path=$(realpath "$module_name/tb/${module_name}_tb.sv")
 
 echo "$v_file_path" >> "$module_name/QA_DIR/filelist.f"
 echo "$tb_file_path" >> "$module_name/QA_DIR/filelist.f"
