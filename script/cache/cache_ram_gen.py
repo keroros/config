@@ -3,7 +3,7 @@
 import subprocess
 
 # 定义要执行的脚本文件名列表
-script_files = ["tag_gen.py", "valid_gen.py", "dirty_gen.py", "lru_gen.py"]
+script_files = ["tag_gen.py", "valid_gen.py", "dirty_gen.py", "lru_gen.py", "data_gen.py"]
 
 # 遍历每个脚本文件并执行
 for script in script_files:

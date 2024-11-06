@@ -1,6 +1,6 @@
 # 生成tag表
 
-output_file = '/home/qidc/Nutstore/Project/riscv/test/cache_ram/way0_tag.txt'
+output_file = '/home/qidc/Nutstore/Project/riscv/test/cache_tag/way0_tag.txt'
 
 with open(output_file, 'w') as file:
     for i in range(256):
@@ -8,7 +8,7 @@ with open(output_file, 'w') as file:
         line = f'00{hex_str}0\n'
         file.write(line)
 
-output_file = '/home/qidc/Nutstore/Project/riscv/test/cache_ram/way1_tag.txt'
+output_file = '/home/qidc/Nutstore/Project/riscv/test/cache_tag/way1_tag.txt'
 
 with open(output_file, 'w') as file:
     for i in range(256):
