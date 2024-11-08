@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:47
-// Last Modified : 2024/10/23 14:27
+// Last Modified : 2024/11/08 14:54
 // File Name     : simple_dp_ram.v
 // Description   : 简单双端口ram，只能a端口读b端口写，读写可以同时进行
 //         
@@ -32,7 +32,7 @@ module simple_dp_ram #(
     output wire [DATA_WIDTH-1:0] doutb   // 读数据
 );
 
-    reg [DATA_WIDTH-1:0] mem[0:1<<ADDR_WIDTH];
+    reg [DATA_WIDTH-1:0] mem[0:1<<ADDR_WIDTH-1];
     reg [DATA_WIDTH-1:0] doutb_r;
 
     always @(posedge clka) begin
