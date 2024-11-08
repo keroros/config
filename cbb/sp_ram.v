@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:14
-// Last Modified : 2024/11/08 14:54
+// Last Modified : 2024/11/08 15:02
 // File Name     : sp_ram.v
 // Description   : 单端口ram，只有一个口读写，且不能同时读写，wea为1时写，
 // wea为0时读
@@ -30,7 +30,9 @@ module sp_ram #(
     output wire [DATA_WIDTH-1:0] douta   // 读数据
 );
 
-    reg [DATA_WIDTH-1:0] mem[0:1<<ADDR_WIDTH-1];
+    localparam DEPTH = 1 << ADDR_WIDTH;
+
+    reg [DATA_WIDTH-1:0] mem[0:DEPTH-1];
     reg [DATA_WIDTH-1:0] douta_r;
 
     always @(posedge clka) begin

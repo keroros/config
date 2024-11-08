@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:33
-// Last Modified : 2024/11/08 14:55
+// Last Modified : 2024/11/08 15:03
 // File Name     : true_dp_ram.v
 // Description   : 真双端口ram，两个端口可以同时读或写，但每个端口不能同时进行
 // 读写
@@ -36,7 +36,9 @@ module true_dp_ram #(
     output wire [DATA_WIDTH-1:0] doutb   // b口读数据
 );
 
-    reg [DATA_WIDTH-1:0] mem[0:1<<ADDR_WIDTH-1];
+    localparam DEPTH = 1 << ADDR_WIDTH;
+
+    reg [DATA_WIDTH-1:0] mem[0:DEPTH-1];
     reg [DATA_WIDTH-1:0] douta_r;
     reg [DATA_WIDTH-1:0] doutb_r;
 
