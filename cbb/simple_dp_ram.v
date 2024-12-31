@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:47
-// Last Modified : 2024/11/08 15:02
+// Last Modified : 2024/12/31 19:39
 // File Name     : simple_dp_ram.v
 // Description   : 简单双端口ram，只能a端口读b端口写，读写可以同时进行
 //         

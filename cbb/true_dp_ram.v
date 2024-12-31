@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/10/21 09:33
-// Last Modified : 2024/11/08 15:03
+// Last Modified : 2024/12/31 12:08
 // File Name     : true_dp_ram.v
 // Description   : 真双端口ram，两个端口可以同时读或写，但每个端口不能同时进行
 // 读写
@@ -66,6 +66,7 @@ module true_dp_ram #(
         end
     end
 
+    assign douta = douta_r;
     assign doutb = doutb_r;
 
 endmodule
