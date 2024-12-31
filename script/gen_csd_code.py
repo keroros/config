@@ -10,7 +10,6 @@ def decimal_to_binary(decimal_value, bit_width):
         binary_str = bin(decimal_value)[2:].zfill(bit_width)
     return binary_str
 
-
 def binary_to_csd(binary_str):
     binary_list = list(map(int, list(binary_str)))  # 将二进制字符串转换为整数列表
     n = len(binary_list)
@@ -90,15 +89,14 @@ def generate_verilog(binary_str, input_var, output_var, input_width, output_widt
     verilog_code += ";"
     return verilog_code
 
-
 # 用户输入
 base_dir = "/home/qidc/Nutstore/Project/gysc/test/coefficient/"
-file_name = input("请输入文件名（例如 test）: ")  # 用户只需输入文件名，不需要后缀
+file_name = input("请输入文件名（例如 hb1）: ")  # 用户只需输入文件名，不需要后缀
 file_path = base_dir + file_name + ".txt"  # 自动添加 .txt 后缀
 num_coeffs = int(input("请输入系数的个数（例如 3）: "))
-bit_width = int(input("请输入二进制码的位宽（例如 31）: "))
-input_width = int(input("请输入输入变量的位宽（例如 35）: "))
-output_width = int(input("请输入输出变量的位宽（例如 65）: "))
+bit_width = int(31)
+input_width = int(35)
+output_width = int(65)
 input_prefix = input("请输入被乘数的变量名前缀（例如 x）: ")
 output_prefix = input("请输入乘法结果的变量名前缀（例如 dat2）: ")
 
@@ -124,3 +122,5 @@ for i in range(num_coeffs):
     verilog_output = generate_verilog(binary_str, input_var, output_var, input_width, output_width)
     # 输出结果
     print(verilog_output)
+
+
