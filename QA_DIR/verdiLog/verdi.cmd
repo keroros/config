@@ -1,4 +1,5 @@
-debImport "-f" "filelist.f"
-srcDeselectAll -win $_nTrace1
-srcHBSelect "top_tb" -win $_nTrace1
+wvCreateWindow
+wvOpenFile -win $_nWave2 {/home/qidc/Nutstore/Project/config/QA_DIR/rtl.fsdb}
+wvRestoreSignal -win $_nWave2 "signal.rc" -overWriteAutoAlias on -appendSignals \
+           on
 debExit
