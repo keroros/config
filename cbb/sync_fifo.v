@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/12/31 12:08
-// Last Modified : 2024/12/31 19:39
+// Last Modified : 2025/01/09 19:26
 // File Name     : sync_fifo.v
 // Description   :
 //         
